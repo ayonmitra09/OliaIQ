@@ -1,0 +1,3 @@
+"""
+LandraIQ MVP package
+""" 
