@@ -7,3 +7,5 @@ netCDF4>=1.5.7  # Required for xarray to read NetCDF files
 scipy>=1.7.0    # Required for various calculations
 seaborn>=0.12.0 # Required for enhanced plotting 
 geopandas>=0.10.0
+dask>=2024.1.0  # Required for chunked processing of large datasets
+pyarrow>=15.0.0  # Required for dask dataframe operations
