@@ -76,7 +76,7 @@ def calculate_risk_components(df):
     }
     
     # Calculate weighted cold relief (with 0.25 total weight)
-    df['cold_risk_relief'] = 0.25 * (
+    df['cold_risk_relief'] = (
         0.60 * cold_components['frost_reduction'] +
         0.40 * cold_components['winter_min_change']
     )
@@ -86,7 +86,7 @@ def calculate_risk_components(df):
         df[f'raw_{name}'] = series
     
     # Calculate net structural risk change
-    df['structural_risk_change'] = df['heat_risk_change'] - df['cold_risk_relief']
+    df['structural_risk_change'] = df['heat_risk_change'] - 0.25 * df['cold_risk_relief']
     
     # Categorize risk changes
     df['risk_change_category'] = pd.cut(

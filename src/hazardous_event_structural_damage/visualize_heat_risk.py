@@ -73,13 +73,13 @@ def create_risk_maps(gdf, states):
     axes[0].set_title('Heat Risk Change (2020-2060)\nNormalized Absolute Change', fontsize=20, pad=20)
     axes[0].axis('off')
     
-    # Cold Relief Map (0-0.25 scale due to weighting)
+    # Cold Relief Map
     gdf.plot(
         column='cold_risk_relief',
         ax=axes[1],
         cmap='RdBu',  # Red-Blue for cold (blue is positive relief)
         vmin=0,
-        vmax=0.25,
+        vmax=1,
         **county_kwargs
     )
     states.plot(ax=axes[1], **state_kwargs)
