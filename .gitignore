@@ -1,3 +1,4 @@
 *.nc
 *.tif
 /__Deprecated/
+*.shp
