@@ -110,6 +110,9 @@ def main():
     # Read input data
     df = pd.read_csv(data_dir / 'climate_datasets' / 'climate_heat_precip_trends.csv')
     
+    # Ensure GEOID is properly formatted with leading zeros
+    df['GEOID'] = df['GEOID'].astype(str).str.zfill(5)
+    
     # Calculate deltas first
     df = calculate_deltas(df)
     
