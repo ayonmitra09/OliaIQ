@@ -1,0 +1,13 @@
+county_fips,county_name,state_fips,state_name,year,slr_level,slr_area_km2,pct_slr_inundated,surge_multiplier,pct_surge_inundated
+36103,Suffolk,36,NY,2010,0,0.0,0.0,1.0,0.0
+34039,Union,34,NJ,2010,0,0.0,0.0,1.0,0.0
+36059,Nassau,36,NY,2010,0,0.0,0.0,1.0,0.0
+36119,Westchester,36,NY,2010,0,0.0,0.0,1.0,0.0
+34017,Hudson,34,NJ,2010,0,0.0,0.0,1.0,0.0
+36085,Richmond,36,NY,2010,0,0.0,0.0,1.0,0.0
+34013,Essex,34,NJ,2010,0,0.0,0.0,1.0,0.0
+36081,Queens,36,NY,2010,0,0.0,0.0,1.0,0.0
+34003,Bergen,34,NJ,2010,0,0.0,0.0,1.0,0.0
+36047,Kings,36,NY,2010,0,0.0,0.0,1.0,0.0
+36061,New York,36,NY,2010,0,0.0,0.0,1.0,0.0
+36005,Bronx,36,NY,2010,0,0.0,0.0,1.0,0.0
